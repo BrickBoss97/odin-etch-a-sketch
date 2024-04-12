@@ -16,7 +16,7 @@ function getInput() {
         alert("Error. Please enter a valid number.")
         return
     }
-    else if (input < 0 || Number.isInteger(input) === false) {
+    else if (input <= 0 || Number.isInteger(+input) === false) {
         alert("Error. Please enter a valid positive whole number.")
         return
     }
